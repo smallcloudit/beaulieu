@@ -76,5 +76,8 @@ group :production do
 
   # Postgres support (added for Heroku)
   gem 'pg'
+
+  # adding amazon s3 support
+  gem 'fog'
 end
 
