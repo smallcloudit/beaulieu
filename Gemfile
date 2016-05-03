@@ -61,7 +61,7 @@ gem 'refinerycms-authentication-devise', '~> 1.0'
 #  gem 'refinerycms-page-images', ['~> 3.0', '>= 3.0.0']
 
 # The Ruby version is specified here so that Heroku uses the right version.
-ruby "ruby-2.3.1"
+ruby "2.3.1"
 
 # The Heroku gem allows you to interface with Heroku's API
 gem 'heroku'
@@ -76,3 +76,5 @@ group :production do
 
   # Postgres support (added for Heroku)
   gem 'pg'
+end
+
