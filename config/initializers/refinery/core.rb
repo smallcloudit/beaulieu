@@ -8,10 +8,10 @@ Refinery::Core.configure do |config|
 
   # Set the S3 options using means other than securely by environment variables.
   # If you have to.
-  config.s3_bucket_name = ENV['beaulieu-prod']
+  # config.s3_bucket_name = ENV['x']
   # config.s3_region = ENV['S3_REGION']
-  config.s3_access_key_id = ENV['AKIAIZ4GTXMGXDJIZTSQ']
-  config.s3_secret_access_key = ENV['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']
+  # config.s3_access_key_id = ENV['x']
+  # config.s3_secret_access_key = ENV['x']
 
   # When true will use Amazon's Simple Storage Service instead of
   # the default file system for storing resources and images
