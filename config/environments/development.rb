@@ -15,7 +15,7 @@ Rails.application.configure do
 
   # Don't care if the mailer can't send.
   if config.respond_to?(:action_mailer)
-    config.action_mailer.raise_delivery_errors = false
+    config.action_mailer.raise_delivery_errors = true
   end
 
   # Print deprecation notices to the Rails logger.
@@ -40,4 +40,16 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-end
+
+  # added for inquiries email notification
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      :authentication => :plain,
+      :address => "smtp.mailgun.org",
+      :port => 587,
+      :domain => "sandboxb6fbd5258166480688b58e1b3b4db2f0.mailgun.org",
+      :user_name => "postmaster@sandboxb6fbd5258166480688b58e1b3b4db2f0.mailgun.org",
+      :password =>  ENV["mailgun_password"]
+    }
+
+  end

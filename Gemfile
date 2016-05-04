@@ -60,6 +60,9 @@ gem 'refinerycms-inquiries'  #, ['~> 3.0', '>= 3.0.0']
 #  gem 'refinerycms-search', ['~> 3.0', '>= 3.0.0']
 #  gem 'refinerycms-page-images', ['~> 3.0', '>= 3.0.0']
 
+# Added for secure storage of SendGrid and other ENV
+gem 'figaro'
+
 # The Ruby version is specified here so that Heroku uses the right version.
 ruby "2.3.1"
 
