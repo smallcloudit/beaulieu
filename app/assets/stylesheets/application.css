@@ -15,3 +15,6 @@
  *= require refinery/theme
  *= require_self
  */
+
+/* https://github.com/refinery/refinerycms-inquiries */
+//= require refinery/inquiries/inquiries
