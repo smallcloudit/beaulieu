@@ -60,6 +60,8 @@ gem 'refinerycms-inquiries'  #, ['~> 3.0', '>= 3.0.0']
 #  gem 'refinerycms-search', ['~> 3.0', '>= 3.0.0']
 #  gem 'refinerycms-page-images', ['~> 3.0', '>= 3.0.0']
 
+gem 'refinerycms-portfolio', github: 'refinery/refinerycms-portfolio', branch: 'master'
+
 # Added for secure storage of SendGrid and other ENV
 gem 'figaro'
 
